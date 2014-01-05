@@ -3,6 +3,11 @@
 
 $first_top: 100px;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 div.vehicle {
   position: absolute;
   left: -200px;
@@ -47,5 +52,17 @@ div.vehicle {
     height: 48px;
     @include cars-sprite('bus_6');
     top: $first_top + 100;
+  }
+}
+
+div.building {
+  position: absolute;
+
+  &.house-1 {
+    top: 30px;
+    right: 100px;
+    width: 75px;
+    height: 68px;
+    @include buildings-sprite('house_1');
   }
 }
