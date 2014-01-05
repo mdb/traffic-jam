@@ -47,10 +47,17 @@ div.vehicle {
     top: $first_top + 100;
   }
 
-  &.car-5 {
+  &.car-6 {
     width: 125px;
     height: 48px;
     @include cars-sprite('bus_6');
+    top: $first_top + 100;
+  }
+
+  &.car-7 {
+    width: 200px;
+    height: 267px;
+    @include cars-sprite('bus_7');
     top: $first_top + 100;
   }
 }
