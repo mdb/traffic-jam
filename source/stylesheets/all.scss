@@ -19,7 +19,6 @@ div.vehicle {
     height: 64px;
     @include cars-sprite('bus_2');
     top: $first_top + 30;
-    display: none;
   }
 
   &.car-3 {
