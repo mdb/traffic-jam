@@ -21,7 +21,7 @@ window.TJ.Animator.prototype.animate = function ($elem) {
   $elem.animate({
     left: "+=" + (this.viewport.width + 200),
     top: "+=" + (this.viewport.height - 200)
-  }, 5000, function () {
+  }, this.randomSpeed(), function () {
     self.reset($elem);
   });
 };
@@ -33,4 +33,8 @@ window.TJ.Animator.prototype.reset = function ($elem) {
   });
 
   this.animate($elem);
+};
+
+window.TJ.Animator.prototype.randomSpeed = function () {
+  return Math.floor((Math.random() * 9000) + 1000);
 };
