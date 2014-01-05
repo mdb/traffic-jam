@@ -19,8 +19,7 @@ window.TJ.Animator.prototype.animate = function ($elem) {
   var self = this;
 
   $elem.animate({
-    left: "+=" + (this.viewport.width + 200),
-    top: "+=" + (this.viewport.height - 200)
+    left: "+=" + (this.viewport.width + 200)
   }, this.randomSpeed(), function () {
     self.reset($elem);
   });
