@@ -41,4 +41,11 @@ div.vehicle {
     @include cars-sprite('bus_5');
     top: $first_top + 100;
   }
+
+  &.car-5 {
+    width: 125px;
+    height: 48px;
+    @include cars-sprite('bus_6');
+    top: $first_top + 100;
+  }
 }
