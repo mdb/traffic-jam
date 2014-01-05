@@ -1,0 +1,25 @@
+@import 'sprite';
+@import 'compass';
+
+div.vehicle {
+  position: absolute;
+
+  &.car-1 {
+    width: 150px;
+    height: 80px;
+    @include cars-sprite('bus_1');
+    @include rotate(20deg);
+    top: -100px;
+    left: -100px;
+  }
+
+  &.car-2 {
+    width: 150px;
+    height: 50px;
+    @include cars-sprite('bus_2');
+    @include rotate(20deg);
+    top: -150px;
+    left: -100px;
+  }
+
+}
