@@ -58,11 +58,19 @@ div.vehicle {
 div.building {
   position: absolute;
 
-  &.house-1 {
+  &.building-1 {
     top: 30px;
-    right: 100px;
+    right: 2%;
     width: 75px;
     height: 68px;
-    @include buildings-sprite('house_1');
+    @include buildings-sprite('building_1');
+  }
+
+  &.building-2 {
+    top: 30px;
+    right: 25%;
+    width: 80px;
+    height: 86px;
+    @include buildings-sprite('building_2');
   }
 }
