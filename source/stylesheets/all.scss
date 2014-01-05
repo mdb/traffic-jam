@@ -60,6 +60,13 @@ div.vehicle {
     @include cars-sprite('bus_7');
     top: $first_top + 100;
   }
+
+  &.car-8 {
+    width: 80px;
+    height: 57px;
+    @include cars-sprite('bus_8');
+    top: $first_top + 120;
+  }
 }
 
 div.building {
