@@ -1,4 +1,4 @@
-window.TJ = {};
+window.TJ = window.TJ || {};
 
 window.TJ.Animator = function ($elem) {
   this.initialize($elem);

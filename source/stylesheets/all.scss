@@ -71,6 +71,11 @@ div.vehicle {
 
 div.building {
   position: absolute;
+  display: none;
+
+  &.built {
+    display: block;
+  }
 
   &.building-1 {
     top: 30px;
