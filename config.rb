@@ -1,8 +1,5 @@
 require 'redcarpet'
-require 'lib/template_helpers'
 require 'fog'
-
-helpers TemplateHelpers
 
 set :markdown,
   :tables => true,
@@ -48,4 +45,3 @@ activate :sync do |sync|
   # sync.gzip_compression = false # Automatically replace files with their equivalent gzip compressed version
   # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
 end
-
