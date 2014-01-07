@@ -109,11 +109,27 @@ div.building {
     @include buildings-sprite('building_5');
   }
 
-  &.building-6 {
+  &.building-5-repeat {
     top: 300px;
     right: 85%;
     width: 75px;
     height: 86px;
     @include buildings-sprite('building_5');
+  }
+
+  &.building-6 {
+    top: 50px;
+    right: 10%;
+    width: 80px;
+    height: 69px;
+    @include buildings-sprite('building_6');
+  }
+
+  &.building-7 {
+    top: 30px;
+    right: 15%;
+    width: 80px;
+    height: 106px;
+    @include buildings-sprite('building_7');
   }
 }
