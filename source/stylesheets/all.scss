@@ -92,4 +92,28 @@ div.building {
     height: 86px;
     @include buildings-sprite('building_2');
   }
+
+  &.building-3 {
+    top: 20px;
+    right: 50%;
+    width: 70px;
+    height: 93px;
+    @include buildings-sprite('building_3');
+  }
+
+  &.building-5 {
+    top: 300px;
+    right: 75%;
+    width: 75px;
+    height: 86px;
+    @include buildings-sprite('building_5');
+  }
+
+  &.building-6 {
+    top: 300px;
+    right: 85%;
+    width: 75px;
+    height: 86px;
+    @include buildings-sprite('building_5');
+  }
 }
