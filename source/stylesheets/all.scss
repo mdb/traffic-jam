@@ -63,59 +63,52 @@ section.road {
     }
 
     &.car-7 {
-      width: 200px;
-      height: 267px;
+      width: 80px;
+      height: 57px;
       @include cars-sprite('bus_7');
       top: $first_top + 100;
     }
 
     &.car-8 {
-      width: 80px;
-      height: 57px;
+      width: 130px;
+      height: 55px;
       @include cars-sprite('bus_8');
       top: $first_top + 120;
     }
 
     &.car-9 {
-      width: 130px;
-      height: 55px;
+      width: 125px;
+      height: 64px;
       @include cars-sprite('bus_9');
       top: $first_top + 130;
     }
 
     &.car-10 {
       width: 125px;
-      height: 64px;
+      height: 50px;
       @include cars-sprite('bus_10');
       top: $first_top + 130;
     }
 
     &.car-11 {
       width: 125px;
-      height: 50px;
+      height: 60px;
       @include cars-sprite('bus_11');
       top: $first_top + 140;
     }
 
     &.car-12 {
-      width: 125px;
-      height: 60px;
+      width: 130px;
+      height: 67px;
       @include cars-sprite('bus_12');
       top: $first_top + 150;
     }
 
     &.car-13 {
       width: 130px;
-      height: 67px;
+      height: 55px;
       @include cars-sprite('bus_13');
       top: $first_top + 160;
-    }
-
-    &.car-14 {
-      width: 130px;
-      height: 55px;
-      @include cars-sprite('bus_14');
-      top: $first_top + 170;
     }
   }
 }
