@@ -2,7 +2,7 @@
 
 An HTML/JavaScript animation I made for my bus-obsessed nephew.
 
-[View it &raquo;](http://)
+[View it &raquo;](http://clapclapexcitement.s3-website-us-east-1.amazonaws.com)
 
 ## Run it locally
 
