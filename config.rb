@@ -1,13 +1,5 @@
-require 'redcarpet'
 require 'fog'
 
-set :markdown,
-  :tables => true,
-  :autolink => true,
-  :gh_blockcode => true,
-  :fenced_code_blocks => true,
-  :with_toc_data => true
-set :markdown_engine, :redcarpet
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
@@ -25,9 +17,6 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
   activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
 end
 
 # Make middleman-sync work with AWS bucket name containing dots
@@ -37,7 +26,7 @@ Fog.credentials = {:path_style => true}
 # Deployment
 activate :sync do |sync|
   sync.fog_provider = 'AWS'
-  sync.fog_directory = 'clapclapexcitement'
+  sync.fog_directory = ENV['AWS_TRAFFIC_JAM_BUCKET']
   sync.fog_region = 'us-east-1'
   sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
   sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
