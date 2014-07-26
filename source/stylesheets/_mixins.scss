@@ -1,0 +1,9 @@
+@import 'compass';
+@import 'sprite';
+
+@mixin cars_background($image_name, $top) {
+  width: image-width("sprites/cars/#{$image_name}.png");
+  height: image-height("sprites/cars/#{$image_name}.png");
+  @include cars-sprite($image_name);
+  top: $top;
+}

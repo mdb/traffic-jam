@@ -1,7 +1,8 @@
 @import 'sprite';
+@import 'mixins';
 @import 'compass';
 
-$first_top: 15px;
+$car_top: 0px;
 
 * {
   margin: 0;
@@ -20,95 +21,12 @@ section.road {
     position: absolute;
     left: -200px;
 
-    &.car-1 {
-      width: 125px;
-      height: 57px;
-      @include cars-sprite('bus_1');
-      top: $first_top;
-    }
+    @for $i from 1 through 13 {
+      $car_top: $car_top + 20;
 
-    &.car-2 {
-      width: 150px;
-      height: 64px;
-      @include cars-sprite('bus_2');
-      top: $first_top + 30;
-    }
-
-    &.car-3 {
-      width: 125px;
-      height: 59px;
-      @include cars-sprite('bus_3');
-      top: $first_top + 60;
-    }
-
-    &.car-4 {
-      width: 130px;
-      height: 62px;
-      @include cars-sprite('bus_4');
-      top: $first_top + 70;
-    }
-
-    &.car-5 {
-      width: 125px;
-      height: 66px;
-      @include cars-sprite('bus_5');
-      top: $first_top + 100;
-    }
-
-    &.car-6 {
-      width: 125px;
-      height: 48px;
-      @include cars-sprite('bus_6');
-      top: $first_top + 100;
-    }
-
-    &.car-7 {
-      width: 80px;
-      height: 57px;
-      @include cars-sprite('bus_7');
-      top: $first_top + 100;
-    }
-
-    &.car-8 {
-      width: 130px;
-      height: 55px;
-      @include cars-sprite('bus_8');
-      top: $first_top + 120;
-    }
-
-    &.car-9 {
-      width: 125px;
-      height: 64px;
-      @include cars-sprite('bus_9');
-      top: $first_top + 130;
-    }
-
-    &.car-10 {
-      width: 125px;
-      height: 50px;
-      @include cars-sprite('bus_10');
-      top: $first_top + 130;
-    }
-
-    &.car-11 {
-      width: 125px;
-      height: 60px;
-      @include cars-sprite('bus_11');
-      top: $first_top + 140;
-    }
-
-    &.car-12 {
-      width: 130px;
-      height: 67px;
-      @include cars-sprite('bus_12');
-      top: $first_top + 150;
-    }
-
-    &.car-13 {
-      width: 130px;
-      height: 55px;
-      @include cars-sprite('bus_13');
-      top: $first_top + 160;
+      &.car-#{$i} {
+        @include cars_background(bus_#{$i}, $car_top);
+      }
     }
   }
 }
